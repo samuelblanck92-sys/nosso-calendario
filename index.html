@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosso Calendário ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="login-screen">
+    <h1>Nosso Calendário ❤️</h1>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div id="app" style="display:none;">
+    <h2 id="today"></h2>
+    <textarea id="text" placeholder="Escreva sobre o dia..."></textarea>
+    <input type="file" id="photo" accept="image/*">
+    <button onclick="saveDay()">Salvar</button>
+    <div id="photos"></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
